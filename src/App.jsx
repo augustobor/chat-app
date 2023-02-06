@@ -1,9 +1,12 @@
 import './App.css'
+import ListChats from './containers/listChats'
+
 import styles from './styles/css/app.module.css'
+
 function App () {
   return (
     <div className={styles.App}>
-      <h1>Hola mundo!</h1>
+      <ListChats />
     </div>
   )
 }
