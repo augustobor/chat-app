@@ -1,0 +1,23 @@
+@import 'style.config';
+
+.searchBar {
+    width: 100%;
+    height: fit-content;
+    padding: 4%;
+    background-color: $blue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input {
+    border-style: none;
+    padding: 2%;
+    border-radius: 4px;
+    background-color: $super-dark-blue;
+    color: $white;
+}
+
+input:focus {
+    border-style: none;
+}
