@@ -1,7 +1,9 @@
 import React from 'react'
 
 const message = () => {
-  return (null)
+  return (
+    <p>SIUUU</p>
+  )
 }
 
 export default message
