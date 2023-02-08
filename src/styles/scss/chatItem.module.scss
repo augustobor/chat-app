@@ -1,0 +1,16 @@
+.chatItem {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    overflow: hidden;
+    height: 7rem;
+}
+
+.chatItem > section {
+    margin-top: .3rem;
+    opacity: 60%;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+}

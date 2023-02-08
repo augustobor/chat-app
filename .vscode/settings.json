@@ -1,6 +1,9 @@
 {
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
+        "allowEmptyReject": false,
+        "allowImplicit": false,
+        "typeof": false
     },
     "eslint.validate": ["javascript"]
 }

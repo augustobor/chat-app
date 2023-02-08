@@ -16,7 +16,7 @@ const searchBar = () => {
     <section className={style.searchBar}>
       <input
         type='text'
-        placeholder='Busca chats aqui'
+        placeholder='🔍 Busca chats aqui'
         value={chatSearch}
         ref={searchInput}
         onChange={handleSearch}

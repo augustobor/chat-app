@@ -10,6 +10,10 @@ html {
 }
 
 .searchBar {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
   width: 100%;
   height: fit-content;
   padding: 4%;
@@ -25,6 +29,10 @@ input {
   border-radius: 4px;
   background-color: #051A26;
   color: #FAFAFA;
+}
+
+input::placeholder {
+  text-align: center;
 }
 
 input:focus {
