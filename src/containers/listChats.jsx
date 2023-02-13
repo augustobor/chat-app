@@ -1,5 +1,5 @@
 /* eslint-disable array-callback-return */
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 // components import
 import SearchBar from '../components/searchBar'
@@ -7,19 +7,33 @@ import ChatItem from '../components/chatItem'
 
 import style from '../styles/css/listChats.module.css'
 
-const listChats = () => {
-  const [myChats, setChats] = useState([1, 2])
+// hook import
+import useChats from '../hooks/useChats'
+import { useLocalStorage } from '../hooks/useLocalStorage'
 
-  useEffect(() => {
-    setChats([1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])
-  }, [])
+const listChats = () => {
+  const myChats = useLocalStorage('CHATS', [{
+    id: '1',
+    name: 'Carlos',
+    lastMessage: 'Mi último mensaje'
+  },
+  {
+    id: '2',
+    name: 'Carlos',
+    lastMessage: 'Mi último mensaje'
+  }])
+
+  const [chatSearch, setChatSearch] = useState('')
 
   return (
     <>
-      <SearchBar />
+      <SearchBar chatSearch={chatSearch} setChatSearch={setChatSearch} />
       <section className={style.listChats}>
-        {myChats.map((value) => {
-          return <ChatItem key={value} />
+        {useChats.searchedChats((chat) => {
+          return <ChatItem key={chat.id} name={chat.name} lastMessage={chat.lastMessage} />
+        })}
+        {myChats.map((chat) => {
+          return <ChatItem key={chat.id} name={chat.name} lastMessage={chat.lastMessage} />
         })}
       </section>
     </>

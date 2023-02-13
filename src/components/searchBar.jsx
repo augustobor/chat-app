@@ -1,12 +1,10 @@
 // react imports
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 
 // styles import
 import style from '../styles/css/searchBar.module.css'
 
-const searchBar = () => {
-  const [chatSearch, setChatSearch] = useState('')
-
+const searchBar = ({ chatSearch, setChatSearch }) => {
   const searchInput = useRef(null)
   const handleSearch = () => {
     setChatSearch(searchInput.current.value)
