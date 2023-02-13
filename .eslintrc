@@ -1,0 +1,25 @@
+{
+    "extends": ["@salesforce/eslint-config-lwc/recommended"],
+    "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "quotes": [1, "double"],
+      "react/jsx-key": [1, { "checkFragmentShorthand": true }],
+      "react/prop-types": 0,
+      "no-underscore-dangle": 0
+    },
+    "globals": {
+      "window": true,
+      "document": true,
+      "localStorage": true,
+      "FormData": true,
+      "FileReader": true,
+      "Blob": true,
+      "navigator": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false,
+      "sourceType": "module"
+    },
+  }
