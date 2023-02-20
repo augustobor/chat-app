@@ -1,0 +1,23 @@
+@import 'style.config';
+
+.appBar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 35%;
+    background-color: $blue;
+}
+
+.appBar > svg {
+    transform: scale(2);
+}
+.appBar > div {
+    transform: scale(1.2);
+}
+
+.appBar svg:hover {
+    cursor: pointer;
+}

@@ -1,30 +1,23 @@
-/* eslint-disable react/jsx-key */
-import React from "react";
+import React from 'react'
 
-function useLocalStorage(itemName, initialValue) {
-  const [item, setItem] = React.useState(initialValue);
-  
+const useLocalStorage = (itemName, initialValue) => {
+  const [items, setItems] = React.useState(initialValue)
+
   React.useEffect(() => {
+    const localStorageItem = localStorage.getItem(itemName)
+    let parsedItem
 
-    const localStorageItem = localStorage.getItem(itemName);
-    let parsedItem;
-        
     if (!localStorageItem) {
-        localStorage.setItem(itemName, JSON.stringify(initialValue));
-        parsedItem = initialValue;
+      localStorage.setItem(itemName, JSON.stringify(initialValue))
+      parsedItem = initialValue
     } else {
-        parsedItem = JSON.parse(localStorageItem);
+      parsedItem = JSON.parse(localStorageItem)
     }
 
-    setItem(parsedItem);
- 
-  }, []);
-  
+    setItems(parsedItem)
+  }, [])
 
-
-  return {
-    item,
-  };
+  return items
 }
 
-export { useLocalStorage };
+export { useLocalStorage }

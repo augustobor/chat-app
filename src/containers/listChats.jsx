@@ -1,40 +1,28 @@
-/* eslint-disable array-callback-return */
+// react import
 import React, { useState } from 'react'
 
 // components import
 import SearchBar from '../components/searchBar'
 import ChatItem from '../components/chatItem'
 
-import style from '../styles/css/listChats.module.css'
-
 // hook import
 import useChats from '../hooks/useChats'
-import { useLocalStorage } from '../hooks/useLocalStorage'
+
+// style import
+import style from '../styles/css/listChats.module.css'
 
 const listChats = () => {
-  const myChats = useLocalStorage('CHATS', [{
-    id: '1',
-    name: 'Carlos',
-    lastMessage: 'Mi último mensaje'
-  },
-  {
-    id: '2',
-    name: 'Carlos',
-    lastMessage: 'Mi último mensaje'
-  }])
-
   const [chatSearch, setChatSearch] = useState('')
+
+  const chats = useChats(chatSearch)
 
   return (
     <>
       <SearchBar chatSearch={chatSearch} setChatSearch={setChatSearch} />
       <section className={style.listChats}>
-        {useChats.searchedChats((chat) => {
-          return <ChatItem key={chat.id} name={chat.name} lastMessage={chat.lastMessage} />
-        })}
-        {myChats.map((chat) => {
-          return <ChatItem key={chat.id} name={chat.name} lastMessage={chat.lastMessage} />
-        })}
+        {chats.map(chat => (
+          <ChatItem key={chat.id} id={chat.id} name={chat.name} lastMessage={chat.lastMessage} />
+        ))}
       </section>
     </>
   )
