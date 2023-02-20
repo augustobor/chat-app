@@ -1,34 +1,29 @@
-/* eslint-disable react/jsx-filename-extension */
-import { useState } from "react";
-import { useLocalStorage } from './useLocalStorage';
+import { useLocalStorage } from './useLocalStorage'
 
-function useChats() {
+function useChats (chatSearch) {
+  const chats = useLocalStorage('CHATS', [{
+    id: '1',
+    name: 'Carlos',
+    lastMessage: 'Mi último mensaje'
+  },
+  {
+    id: '2',
+    name: 'Martin',
+    lastMessage: 'Mi último mensaje'
+  }])
 
-    const {
-        item: chats,
-    } = useLocalStorage('CHATS', []);
+  let searchedChats = []
 
-    const [chatSearch, setChatSearch] = useState('')
-
-    const totalChats = chats.length
-    let searchedChats = [];
-
-    if (chatSearch !== '') {
-        searchedChats = chats;
-    } else {
-        searchedChats = chats.filter(chat => {
-        const chatName = chat.name.toLowerCase();
-        const searchText = chatSearch.toLowerCase();
-        return chatName.includes(searchText);
-        });
-    }
-
-    return {
-        totalChats,
-        chatSearch,
-        setChatSearch,
-        searchedChats,
-    };
+  if (chatSearch === '') {
+    searchedChats = chats
+  } else {
+    searchedChats = chats.filter(chat => {
+      const chatName = chat.name.toLowerCase()
+      const searchText = chatSearch.toLowerCase()
+      return chatName.includes(searchText)
+    })
+  }
+  return searchedChats
 }
 
-export default useChats()
+export default useChats
