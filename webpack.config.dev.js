@@ -17,18 +17,24 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)/,
+        test: /\.js|\.jsx$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
         }
       },
       {
-        test: /\.(css|scss)/,
+        test: /\.html/,
+        use: {
+          loader: 'html-loader'
+        }
+      },
+      {
+        test: /\.css|.s[ac]ss$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader'
+          'sass-loader',
         ]
       },
       {
@@ -44,12 +50,13 @@ module.exports = {
       filename: './index.html'
     }),
     new MiniCssExtractPlugin({
-      filename: 'assets/[name].[contenthash].css'
+      filename: '[name].module.css'
     })
   ],
   devServer: {
-    state: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, 'dist'),
     compress: true,
+    historyApiFallback: true,
     open: true,
     port: 3006
   }

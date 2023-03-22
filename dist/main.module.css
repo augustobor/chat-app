@@ -1,0 +1,256 @@
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.css ***!
+  \********************************************************************************************************/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/searchBar.module.css ***!
+  \******************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.uz6spZfdfC1JuqspSX7O {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  padding: 4%;
+  background-color: #0c324a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input {
+  border-style: none;
+  padding: 2%;
+  border-radius: 4px;
+  background-color: #051A26;
+  color: #FAFAFA;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+input:focus {
+  border-style: none;
+}
+
+
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/chatItem.module.css ***!
+  \*****************************************************************************************************************************/
+.k9ROtKYZDcbXcEsEo3A8 {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: medium;
+  overflow: hidden;
+  height: 7rem;
+}
+
+.k9ROtKYZDcbXcEsEo3A8 > section {
+  margin-top: 0.3rem;
+  opacity: 60%;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/listChats.module.css ***!
+  \******************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.oQphb014NU5e3amQxDic {
+  background-color: #051A26;
+}
+
+
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/appBar.module.css ***!
+  \***************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.zSWdnS2oKc6d5FK1Vfau {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 35%;
+  background-color: #0c324a;
+}
+
+.zSWdnS2oKc6d5FK1Vfau > svg {
+  transform: scale(2);
+}
+
+.zSWdnS2oKc6d5FK1Vfau > div {
+  transform: scale(1.2);
+}
+
+.zSWdnS2oKc6d5FK1Vfau svg:hover {
+  cursor: pointer;
+}
+
+
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/mainView.module.css ***!
+  \*****************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/register.module.css ***!
+  \*****************************************************************************************************************************/
+.v2d_feO98fP3i9dchgNA {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/checkin.module.css ***!
+  \****************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.lFZLQN99HoK6lx6BxG81 {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  height: fit-content;
+  width: fit-content;
+  padding: 1%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px #1C1C1C;
+  background-color: #0c324a;
+}
+
+.lFZLQN99HoK6lx6BxG81 > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+.aWLt1cw1W6QVnK6Kmpub {
+  display: flex;
+  flex-direction: column;
+}
+
+.T6sqB_OBgqabfMVascDF {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.aWLt1cw1W6QVnK6Kmpub input, label {
+  padding: 2%;
+  font-size: 2rem;
+  margin: 1rem 0rem;
+}
+
+label {
+  background-color: #051A26;
+  border-radius: 8px;
+  text-align: center;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.uF8Yp3CE7e9aFxAdem_h input::placeholder {
+  color: #FAFAFA;
+}
+
+.uF8Yp3CE7e9aFxAdem_h {
+  background-color: #03C988;
+  color: #FAFAFA;
+  font-weight: bold;
+  padding: 2%;
+  font-size: 2.5rem;
+  border-radius: 8px;
+  border-style: none;
+  margin-top: 3rem;
+}
+
+.uF8Yp3CE7e9aFxAdem_h:hover {
+  cursor: pointer;
+}
+
+.IAm37ujAr_d5iaXIvhFT {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #03C988;
+  text-align: center;
+}
+
+
+/*!************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/app.module.css ***!
+  \************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.B0HQaaLsS8eTihyyjLwK {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #051A26;
+  color: #FAFAFA;
+  width: 100%;
+  height: 100vh;
+}
+
+

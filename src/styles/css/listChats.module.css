@@ -13,4 +13,25 @@ html {
   background-color: #051A26;
 }
 
+.chatButton {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 80px;
+  height: 80px;
+  background-color: #0c324a;
+  border-style: none;
+  border-radius: 50%;
+  padding: 5%;
+  color: #FAFAFA;
+  font-size: xx-large;
+  transform: rotate(0deg);
+  transition: all 200ms ease-in;
+}
+
+.chatButton:hover {
+  transform: rotate(245deg);
+  transition: all 200ms ease-in;
+}
+
 /*# sourceMappingURL=listChats.module.css.map */

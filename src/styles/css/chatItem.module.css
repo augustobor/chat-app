@@ -5,6 +5,7 @@
   font-size: medium;
   overflow: hidden;
   height: 7rem;
+  align-items: center;
 }
 
 .chatItem > section {

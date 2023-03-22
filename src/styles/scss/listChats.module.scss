@@ -3,3 +3,14 @@
 .listChats { 
     background-color: $super-dark-blue;
 }
+
+.chatButton {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: $blue;
+    border-style: none;
+    padding: 5%;
+    color: $white;
+    font-size: large;
+}

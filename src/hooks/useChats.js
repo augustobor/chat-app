@@ -1,16 +1,8 @@
 import { useLocalStorage } from './useLocalStorage'
 
-function useChats (chatSearch) {
-  const chats = useLocalStorage('CHATS', [{
-    id: '1',
-    name: 'Carlos',
-    lastMessage: 'Mi último mensaje'
-  },
-  {
-    id: '2',
-    name: 'Martin',
-    lastMessage: 'Mi último mensaje'
-  }])
+import axios from 'axios'
+
+const useChats = (chatSearch, chats) => {
 
   let searchedChats = []
 
@@ -18,8 +10,8 @@ function useChats (chatSearch) {
     searchedChats = chats
   } else {
     searchedChats = chats.filter(chat => {
-      const chatName = chat.name.toLowerCase()
-      const searchText = chatSearch.toLowerCase()
+      const chatName = chat.name?.toLowerCase()
+      const searchText = chatSearch?.toLowerCase()
       return chatName.includes(searchText)
     })
   }

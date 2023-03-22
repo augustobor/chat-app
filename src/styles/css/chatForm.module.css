@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+}
+
+.chatForm {
+  position: absolute;
+  width: 90%;
+  height: auto;
+  border-radius: 8px;
+  margin: 5%;
+  margin-top: 40%;
+  background-color: #0c324a;
+  z-index: 1;
+}
+
+.chatForm > h1 {
+  text-align: center;
+  margin: 5%;
+  font-size: large;
+  margin-bottom: 2rem;
+}
+
+.checkForm > input {
+  padding: 5%;
+  margin-bottom: 3rem;
+  border-style: solid;
+  border-color: transparent;
+  font-size: large;
+}
+
+.checkForm > input::placeholder {
+  color: #FAFAFA;
+  opacity: 0.6;
+}
+
+.checkForm > input:focus {
+  border-style: solid;
+  border-color: #03C988;
+}
+
+.checkForm {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+
+.checkButton {
+  border-style: none;
+  color: #FAFAFA;
+  font-weight: bold;
+  background-color: #021724;
+  padding: 4%;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.checkButton:hover {
+  background-color: #03C988;
+  transition: all 200ms ease;
+}
+
+.options {
+  border-style: none;
+  padding: 4%;
+  border-radius: 8px;
+  background-color: #021724;
+  color: #FAFAFA;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=chatForm.module.css.map */
