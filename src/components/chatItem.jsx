@@ -11,12 +11,12 @@ import Avatar from '@mui/material/Avatar'
 // style import
 import style from '../styles/css/chatItem.module.css'
 
-const chatItem = ({ id, name, lastMessage }) => {
+const chatItem = ({ idChat, name, lastMessage }) => {
 
   const navigate = useNavigate()
 
   const handleChat = () => {
-    navigate(`/chat/${id}`)
+    navigate(`/chat/${idChat}`)
   }
 
   return (

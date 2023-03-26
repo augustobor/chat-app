@@ -2,5 +2,9 @@
 import React from 'react'
 
 const newMessage = () => {
-    return null
+    return (
+        <h3>Un mensaje</h3>
+    )
 }
+
+export default newMessage

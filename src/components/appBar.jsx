@@ -10,13 +10,20 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 // assets imports
 import profile from '../assets/static/avatarProfile.jpg'
+import { useNavigate } from 'react-router-dom';
 
-const appBar = () => {
+// redux imports 
+import { useSelector } from 'react-redux';
+
+const appBar = ({ name }) => {
+
+  const navigate = useNavigate()
+  const userId = useSelector((state) => state.userController).userId
   return (
     <header className={styles.appBar}>
-      <ArrowBackIcon />
+      <ArrowBackIcon onClick={() => {navigate(`/${userId}`)}} />
       <Avatar src={profile} />
-      <h1>Nombre</h1>
+      <h1>{name}</h1>
     </header>
   )
 }

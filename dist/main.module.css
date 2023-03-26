@@ -19,23 +19,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.uz6spZfdfC1JuqspSX7O {
-  position: sticky;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: fit-content;
-  padding: 4%;
-  background-color: #0c324a;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 input {
   border-style: none;
-  padding: 2%;
+  padding: 5%;
   border-radius: 4px;
   background-color: #051A26;
   color: #FAFAFA;
@@ -60,6 +46,7 @@ input:focus {
   font-size: medium;
   overflow: hidden;
   height: 7rem;
+  align-items: center;
 }
 
 .k9ROtKYZDcbXcEsEo3A8 > section {
@@ -68,6 +55,93 @@ input:focus {
   width: 80%;
   position: relative;
   overflow: hidden;
+}
+
+
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/chatForm.module.css ***!
+  \*****************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.MoVbTFB0b5biXCUwWSrO {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Wp4xZB7pjXscD4ZFBqck {
+  position: fixed;
+  width: 90%;
+  height: auto;
+  left: 5%;
+  top: 25%;
+  border-radius: 8px;
+  background-color: #0c324a;
+  z-index: 1;
+}
+
+.Wp4xZB7pjXscD4ZFBqck > h1 {
+  text-align: center;
+  margin: 5%;
+  font-size: large;
+  margin-bottom: 2rem;
+}
+
+.pVOerEb6ygrg4VcPfpJw > input {
+  padding: 5%;
+  margin-bottom: 3rem;
+  border-style: solid;
+  border-color: transparent;
+  font-size: large;
+}
+
+.pVOerEb6ygrg4VcPfpJw > input::placeholder {
+  color: #FAFAFA;
+  opacity: 0.6;
+}
+
+.pVOerEb6ygrg4VcPfpJw > input:focus {
+  border-style: solid;
+  border-color: #03C988;
+}
+
+.pVOerEb6ygrg4VcPfpJw {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+
+.pXvTCavTaKFrLuDZwSq9 {
+  border-style: none;
+  color: #FAFAFA;
+  font-weight: bold;
+  background-color: #021724;
+  padding: 4%;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.pXvTCavTaKFrLuDZwSq9:hover {
+  background-color: #03C988;
+  transition: all 200ms ease;
+}
+
+.Kznk6xv_JZfTbJw9ZsfP {
+  border-style: none;
+  padding: 4%;
+  border-radius: 8px;
+  background-color: #021724;
+  color: #FAFAFA;
+  font-weight: bold;
 }
 
 
@@ -87,6 +161,47 @@ html {
 
 .oQphb014NU5e3amQxDic {
   background-color: #051A26;
+}
+
+.DCJnqW8GcDwY59lgdTmc {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 75px;
+  height: 75px;
+  background-color: #0c324a;
+  border-style: none;
+  color: #FAFAFA;
+  border-radius: 50%;
+  font-size: xx-large;
+  transform: rotate(0deg);
+  transition: all 300ms ease-in;
+}
+
+.DCJnqW8GcDwY59lgdTmc:hover {
+  transform: rotate(270deg);
+  transition: all 300ms ease-in;
+}
+
+.UAd6hya_TtMVghAlTe34 {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c324a;
+}
+
+.UAd6hya_TtMVghAlTe34 > svg {
+  transform: scale(2);
+}
+
+.UAd6hya_TtMVghAlTe34 > div {
+  transform: scale(1.2);
+}
+
+.UAd6hya_TtMVghAlTe34 svg:hover {
+  cursor: pointer;
 }
 
 
@@ -158,11 +273,10 @@ html {
 
 .lFZLQN99HoK6lx6BxG81 {
   position: absolute;
-  left: 40%;
-  top: 30%;
-  height: fit-content;
-  width: fit-content;
-  padding: 1%;
+  width: 95%;
+  margin: 0 2.5%;
+  margin-top: 25vh;
+  padding: 2%;
   border-radius: 8px;
   box-shadow: 4px 4px 10px #1C1C1C;
   background-color: #0c324a;

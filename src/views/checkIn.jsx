@@ -61,7 +61,9 @@ const checkIn = () => {
         <section className={styles.checkin}>
             <div>
                 <h1>Bienvenidos al chat!</h1>
-                <Switch onChange={handleSwitch} />
+                <Switch onChange={handleSwitch} sx={{
+                    'transform': 'scale(1.2)'
+                }}/>
             </div>
             <h2 className={styles.loginState}>{register ?  'registrarse' : 'logearse '}</h2>
             <form className={styles.checkForm} onSubmit={handleSubmit} ref={formRef}>

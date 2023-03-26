@@ -17,21 +17,41 @@ html {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   background-color: #0c324a;
   border-style: none;
-  border-radius: 50%;
-  padding: 5%;
   color: #FAFAFA;
+  border-radius: 50%;
   font-size: xx-large;
   transform: rotate(0deg);
-  transition: all 200ms ease-in;
+  transition: all 300ms ease-in;
 }
 
 .chatButton:hover {
-  transform: rotate(245deg);
-  transition: all 200ms ease-in;
+  transform: rotate(270deg);
+  transition: all 300ms ease-in;
+}
+
+.appBar {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c324a;
+}
+
+.appBar > svg {
+  transform: scale(2);
+}
+
+.appBar > div {
+  transform: scale(1.2);
+}
+
+.appBar svg:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=listChats.module.css.map */

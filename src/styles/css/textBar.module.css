@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.textBar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  bottom: 0px;
+}
+
+.textBar > input {
+  width: 80%;
+  margin-left: 1rem;
+  border-radius: 8px;
+  background-color: #0c324a;
+  color: #FAFAFA;
+  font-size: 1.5rem;
+}
+
+.textBar > input::placeholder {
+  color: #FAFAFA;
+}
+
+.textBar > div {
+  margin-right: 1.5rem;
+}
+
+/*# sourceMappingURL=textBar.module.css.map */

@@ -8,9 +8,38 @@
     position: fixed;
     bottom: 24px;
     right: 24px;
+    width: 75px;
+    height: 75px;
     background-color: $blue;
     border-style: none;
-    padding: 5%;
     color: $white;
-    font-size: large;
+    border-radius: 50%;
+    font-size: xx-large;
+    transform: rotate(0deg);
+    transition: all 300ms ease-in;
+}
+
+.chatButton:hover {
+    transform: rotate(270deg);
+    transition: all 300ms ease-in;
+}
+
+.appBar {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $blue;
+}
+
+.appBar > svg {
+    transform: scale(2);
+}
+.appBar > div {
+    transform: scale(1.2);
+}
+
+.appBar svg:hover {
+    cursor: pointer;
 }

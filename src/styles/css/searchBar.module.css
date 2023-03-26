@@ -9,23 +9,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.searchBar {
-  position: sticky;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: fit-content;
-  padding: 4%;
-  background-color: #0c324a;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 input {
   border-style: none;
-  padding: 2%;
+  padding: 5%;
   border-radius: 4px;
   background-color: #051A26;
   color: #FAFAFA;

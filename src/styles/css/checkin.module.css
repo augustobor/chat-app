@@ -24,7 +24,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .checkForm {
@@ -78,6 +78,60 @@ label:hover {
   font-weight: bold;
   color: #03C988;
   text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .checkin {
+    width: 60%;
+    margin: 0 20%;
+    margin-top: 25vh;
+    padding: 2%;
+  }
+  .checkin > div {
+    margin-bottom: 2rem;
+  }
+  .loginState {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .checkForm input, label {
+    padding: 4%;
+    margin: 1rem 3rem;
+  }
+  .checkButton {
+    margin: 0 10%;
+    margin-top: 3rem;
+  }
+  .error {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .checkin {
+    width: 30%;
+    margin: 0 35%;
+    margin-top: 20vh;
+    padding: 2%;
+  }
+  .checkin > div {
+    margin-bottom: 4rem;
+  }
+  .loginState {
+    font-size: 5rem;
+  }
+  .checkForm input, label {
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 3rem;
+  }
+  .checkButton {
+    margin: 0 20%;
+    margin-top: 3rem;
+  }
+  .error {
+    font-size: 3.5rem;
+  }
 }
 
 /*# sourceMappingURL=checkin.module.css.map */

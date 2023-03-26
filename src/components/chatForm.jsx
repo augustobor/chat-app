@@ -3,21 +3,25 @@ import React, { useEffect, useRef, useState } from 'react'
 import styles from '../styles/css/chatForm.module.css'
 
 import axios from 'axios'
+import { CircularProgress } from '@mui/material'
 
 const chatForm = ({ userID, setModal }) => {
 
     const formRef = useRef(null)
 
     const [contacts, setContacts] = useState([{}])
+    const [submited, setSubmited] = useState(false)
 
     const handleSubmit = async (event) => {
 
         const { name, contacts } = formRef.current
 
+        setSubmited(true)
         event.preventDefault()
         try {
-            const responseUsers = await axios.get(`/user/name/getByJustName?name=${contacts.value}`)
-            await axios.post(`/chat/${userID}`, { name: name.value, addUsersId: responseUsers.data.body._id})
+            const responseUsers = await (await axios.get(`/user/name/getByJustName?name=${contacts.value}`)).data.body._id
+            await axios.post(`/chat/${userID}`, { name: name.value, addUsersId: responseUsers})
+            setSubmited(false)
             setModal(false)
         } catch (e) {
             console.error(e)
@@ -50,7 +54,10 @@ const chatForm = ({ userID, setModal }) => {
                             <option key={i} value={contact.name}>{contact.name}</option>
                             ))}
                     </select>
-                    <button className={styles.checkButton} onClick={() => handleSubmit}>Crear chat</button>
+                    { submited 
+                        ? <div className={styles.progress}><CircularProgress /></div> 
+                        : <button className={styles.checkButton} onClick={() => handleSubmit}>Crear chat</button>
+                    }
                 </form>
             </section>
         </div>
