@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.textBar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  bottom: 0px;
+}
+
+.textBar > input {
+  width: 80%;
+  padding: 2%;
+  margin-left: 1rem;
+  border-style: none;
+  border-radius: 8px;
+  background-color: #0c324a;
+  color: #FAFAFA;
+  font-size: 1.5rem;
+}
+
+.textBar > input::placeholder {
+  color: #FAFAFA;
+}
+
+.textBar > div {
+  margin-right: 1.5rem;
+}
+
+.sendButton {
+  border-radius: 50%;
+  background-color: #03C988;
+  padding: 4%;
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 650px) {
+  .textBar > input {
+    width: 55%;
+    margin-bottom: 2rem;
+  }
+  .sendButton {
+    padding: 10%;
+    margin-left: 0rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .textBar > input {
+    width: 45%;
+    padding: 1%;
+  }
+}
+
+/*# sourceMappingURL=textBar.module.css.map */

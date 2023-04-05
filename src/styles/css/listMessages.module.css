@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.listMessages {
+  height: 100%;
+}
+
+@media only screen and (min-width: 650px) {
+  .listMessages {
+    background-color: #0c324a;
+  }
+}
+
+/*# sourceMappingURL=listMessages.module.css.map */

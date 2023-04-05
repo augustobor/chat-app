@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.mainView {
+  height: auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 650px) {
+  .mainView {
+    height: 100%;
+    width: 100%;
+  }
+  .mainView_mobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=mainView.module.css.map */

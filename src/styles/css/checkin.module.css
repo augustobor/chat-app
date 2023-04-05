@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.checkin {
+  position: absolute;
+  width: 95%;
+  margin: 0 2.5%;
+  margin-top: 25vh;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px #1C1C1C;
+  background-color: #0c324a;
+}
+
+.checkin > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.7rem;
+}
+
+.checkForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginState {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.checkForm input, label {
+  padding: 2%;
+  font-size: 2rem;
+  margin: 1rem 0rem;
+}
+
+label {
+  background-color: #051A26;
+  border-radius: 8px;
+  text-align: center;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.checkButton input::placeholder {
+  color: #FAFAFA;
+}
+
+.checkButton {
+  background-color: #03C988;
+  color: #FAFAFA;
+  font-weight: bold;
+  padding: 2%;
+  font-size: 2.5rem;
+  border-radius: 8px;
+  border-style: none;
+  margin-top: 3rem;
+}
+
+.checkButton:hover {
+  cursor: pointer;
+}
+
+.error {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #03C988;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .checkin {
+    width: 60%;
+    margin: 0 20%;
+    margin-top: 25vh;
+    padding: 2%;
+  }
+  .checkin > div {
+    margin-bottom: 2rem;
+  }
+  .loginState {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .checkForm input, label {
+    padding: 4%;
+    margin: 1rem 3rem;
+  }
+  .checkButton {
+    margin: 0 10%;
+    margin-top: 3rem;
+  }
+  .error {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .checkin {
+    width: 30%;
+    margin: 0 35%;
+    margin-top: 20vh;
+    padding: 2%;
+  }
+  .checkin > div {
+    margin-bottom: 4rem;
+  }
+  .loginState {
+    font-size: 5rem;
+  }
+  .checkForm input, label {
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 3rem;
+  }
+  .checkButton {
+    margin: 0 20%;
+    margin-top: 3rem;
+  }
+  .error {
+    font-size: 3.5rem;
+  }
+}
+
+/*# sourceMappingURL=checkin.module.css.map */

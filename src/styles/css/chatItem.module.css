@@ -1,0 +1,32 @@
+.chatItem {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  overflow: hidden;
+  height: 12rem;
+  align-items: center;
+}
+
+.chatItem > section {
+  margin-top: 0.3rem;
+  opacity: 60%;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 650px) {
+  .chatItem {
+    font-size: xx-large;
+  }
+  .chatItem > section {
+    margin-top: 0.3rem;
+    opacity: 60%;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+/*# sourceMappingURL=chatItem.module.css.map */

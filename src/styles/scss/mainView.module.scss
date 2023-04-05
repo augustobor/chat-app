@@ -1,0 +1,18 @@
+@import './style.config.scss';
+
+.mainView {
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (min-width: 650px) {
+
+    .mainView {
+        height: 100%;
+        width: 100%;
+    }
+    .mainView_mobile {
+        display: none;
+    }
+
+}

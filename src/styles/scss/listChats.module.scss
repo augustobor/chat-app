@@ -1,0 +1,76 @@
+@import 'style.config';
+
+.tablet_desktop {
+    display: none;
+}
+
+.listChats { 
+    background-color: $super-dark-blue;
+}
+
+.chatButton {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 75px;
+    height: 75px;
+    background-color: $blue;
+    border-style: none;
+    color: $white;
+    border-radius: 50%;
+    font-size: xx-large;
+    transform: rotate(0deg);
+    transition: all 300ms ease-in;
+}
+
+.chatButton:hover {
+    transform: rotate(270deg);
+    transition: all 300ms ease-in;
+}
+
+.appBar {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $blue;
+}
+
+.appBar > svg {
+    transform: scale(2);
+    margin-left: 1rem;
+}
+.appBar > div {
+    transform: scale(1.2);
+}
+
+.appBar svg:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 650px) {
+
+    .mobile {
+        display: none;
+    }
+    
+    .tablet_desktop {
+        display: flex;
+    }
+
+    .listChats { 
+        width: 65%;
+    }
+
+    .appBar > svg {
+        transform: scale(3);
+        margin-left: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .appBar > svg {
+        margin-left: 10rem;
+    }
+}

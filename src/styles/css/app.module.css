@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #051A26;
+  color: #FAFAFA;
+  width: 100%;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=app.module.css.map */
