@@ -13,9 +13,13 @@ import styles from '../styles/css/mainView.module.css'
 // axios
 import axios from 'axios'
 
+// redux
+import { useSelector } from 'react-redux'
+
 const mainView = () => {
 
-    const { id } = useParams()
+
+    const { id } = (screen.width <= 650) ? useParams() : useSelector((state) => state.chatController).chatId
     const [chat, setChat] = useState({})
 
     const getChat = async() => {

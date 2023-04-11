@@ -19,7 +19,7 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
  
 // reduximport
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { updateUserState } from '../redux/userSlice.js'
 
 import { useNavigate } from 'react-router-dom';

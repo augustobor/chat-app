@@ -11,12 +11,19 @@ import Avatar from '@mui/material/Avatar'
 // style import
 import style from '../styles/css/chatItem.module.css'
 
+// redux imports
+import { useDispatch } from 'react-redux'
+import { updateChatState } from '../redux/chatSlice'
+
+
+
 const chatItem = ({ idChat, name, lastMessage }) => {
 
   const navigate = useNavigate()
+  const dispatch = useDispatch()
 
   const handleChat = () => {
-    navigate(`/chat/${idChat}`)
+    (screen.width <= 650) ? navigate(`/chat/${idChat}`) : dispatch(updateChatState(idChat))
   }
 
   return (

@@ -20,16 +20,18 @@ import storage from 'redux-persist/lib/storage' // defaults to localStorage for 
 
 // Reducer imports
 import userReducer from './userSlice'
+import chatReducer from './chatSlice'
 
 
 const reducers = combineReducers({
   userController: userReducer,
+  chatController: chatReducer
 })
 
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['userController']
+  whitelist: ['userController', 'chatController']
 }
 
 const persistedReducer = persistReducer(persistConfig, reducers)

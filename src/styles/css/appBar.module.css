@@ -18,6 +18,7 @@ html {
   padding-left: 5%;
   padding-right: 35%;
   background-color: #0c324a;
+  font-size: medium;
 }
 
 .appBar > svg {
