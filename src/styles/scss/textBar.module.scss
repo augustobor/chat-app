@@ -38,21 +38,26 @@
 
 @media only screen and (min-width: 650px) {
     .textBar > input {
-        width: 55%;
-        margin-bottom: 2rem;
+        width: 45%;
     }
 
     .sendButton {
-        padding: 10%;
         margin-left: 0rem;
     }
     
 }
 
 @media only screen and (min-width: 1000px) {
+
+    .sendButton {
+        display: none;
+    }
+
     .textBar > input {
         width: 45%;
         padding: 1%;
+        margin-bottom: 2rem;
+        font-size: x-large;
     }
 }
 

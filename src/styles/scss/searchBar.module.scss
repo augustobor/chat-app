@@ -41,8 +41,18 @@
     }
 
     .searchBar > input {
-        padding: 1%;
+        font-size: medium;
+        padding: 2%;
         width: 65vw;
     }
 
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .searchBar > input {
+        width: 45vw;
+        padding: 2%;
+        font-size: x-large;
+    }
 }

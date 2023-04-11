@@ -67,10 +67,31 @@
         transform: scale(3);
         margin-left: 4rem;
     }
+
+    .chatButton {
+        bottom: 24px;
+        right: 65%;
+    }
+
 }
 
 @media only screen and (min-width: 1000px) {
+
+    .appBar {
+        height: 10%;
+        padding: 2%;
+        justify-content: space-around;
+    }
+
     .appBar > svg {
         margin-left: 10rem;
     }
+
+    .chatButton {
+        bottom: 24px;
+        right: 75%;
+        margin-top: 0;
+        font-size: 6rem;
+    }
+
 }

@@ -43,6 +43,12 @@ html {
   margin: 1rem 0rem;
 }
 
+.checkForm input {
+  border-style: none;
+  border-radius: 4px;
+  background-color: #051A26;
+}
+
 label {
   background-color: #051A26;
   border-radius: 8px;

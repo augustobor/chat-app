@@ -38,6 +38,8 @@ html {
   margin-bottom: 3rem;
   border-style: solid;
   border-color: transparent;
+  border-radius: 8px;
+  background-color: #051A26;
   font-size: large;
 }
 
@@ -79,6 +81,38 @@ html {
   background-color: #021724;
   color: #FAFAFA;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+  .chatForm {
+    width: 40%;
+    left: 35%;
+  }
+  .chatForm > h1 {
+    font-size: x-large;
+  }
+  .checkForm > input {
+    padding: 5%;
+    width: auto;
+  }
+  .checkButton {
+    font-size: x-large;
+  }
+  .options {
+    font-size: large;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .chatForm {
+    width: 20%;
+    left: 40%;
+  }
+  .checkForm > input {
+    font-size: x-large;
+  }
+  .options {
+    font-size: x-large;
+  }
 }
 
 /*# sourceMappingURL=chatForm.module.css.map */
